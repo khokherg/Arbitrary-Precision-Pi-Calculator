@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane opacity="0.84" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+	<children>
+		<TextField fx:id="text1" layoutX="183.0" layoutY="94.0" prefHeight="25.0" prefWidth="229.0" />
+		<TextField fx:id="text2" layoutX="183.0" layoutY="144.0" prefHeight="25.0" prefWidth="229.0" />
+		<Button fx:id="btnCalculate" layoutX="106.0" layoutY="360.0" mnemonicParsing="false" text="Calculate" textFill="#b52d2d">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+		<Button fx:id="btnClear" layoutX="305.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Clear" textFill="#b23737">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+		<TextArea fx:id="textResult" layoutX="106.0" layoutY="182.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="155.0" prefWidth="278.0" />
+		<Label layoutX="27.0" layoutY="95.0" text="Enter Precision" textFill="#b93838">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font></Label>
+		<Label layoutX="23.0" layoutY="144.0" prefHeight="25.0" prefWidth="144.0" text="Enter Iterations" textFill="#c64747">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font></Label>
+		<Label contentDisplay="CENTER" layoutX="27.0" layoutY="7.0" prefHeight="52.0" prefWidth="402.0" text="PI CALCULATOR" textFill="#904545">
+			<font>
+				<Font name="System Italic" size="52.0" />
+			</font>
+		</Label>
+	</children>
+	<opaqueInsets>
+		<Insets />
+	</opaqueInsets>
+	<effect>
+		<ColorAdjust />
+	</effect>
+	<cursor>
+		<Cursor fx:constant="NE_RESIZE" />
+	</cursor>
+</AnchorPane>
